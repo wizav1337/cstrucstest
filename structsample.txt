@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+
+typedef struct Cars {
+
+    char color[50];
+    int age;
+    int height;
+} Cars;
+
+void print_cars(Cars *c) {
+
+    printf("Car height is %d\n", c->height);
+}
+
+
+int main() {
+
+struct Cars ferrari;
+
+ferrari.age = 123;
+ferrari.height = 23;
+
+printf("The current age is %d :\n", ferrari.age);
+print_cars(&ferrari);
+return 0;
+
+
+}
